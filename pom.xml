@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>io.massiv.samples.sales</groupId>
-    <artifactId>sales-order-serivce</artifactId>
+    <artifactId>sales-shipping-serivce</artifactId>
     <version>1.0.0</version>
     <packaging>jar</packaging>
 

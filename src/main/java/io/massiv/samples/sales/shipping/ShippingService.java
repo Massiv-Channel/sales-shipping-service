@@ -29,9 +29,11 @@ public class ShippingService {
 
     @Trace
     @RequestMapping(value = "/", method = RequestMethod.POST)
-    public void create(@RequestBody ShippingRequest order) {
-        orders.put(order.getItem(), order);
-        auditService.orderReceived(order);
+    public void create(@RequestBody ShippingRequest request) {
+        System.out.println("Shipping request received: " + request.getItem() + " Quantity: " + request.getQuantity());
+
+        orders.put(request.getItem(), request);
+        auditService.orderReceived(request);
 
     }
 }
